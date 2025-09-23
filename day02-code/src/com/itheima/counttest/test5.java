@@ -12,7 +12,7 @@ public class test5 {
             System.out.println("小红与小明成为对象");
         }
     else {
-            System.out.println("我们戏");
+            System.out.println("我们没戏");
         }
     }
 }
