@@ -6,7 +6,7 @@ package com.it_heima.switchdemo;
 */
 public class SwitchDemo4 {
     public static void main(String[] args) {
-        int score=10;
+        int score=84;
         if (score>=90 && score<=100) {
             System.out.println("一等奖");
         }
