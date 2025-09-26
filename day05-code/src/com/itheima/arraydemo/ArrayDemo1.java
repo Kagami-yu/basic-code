@@ -1,6 +1,6 @@
 package com.itheima.arraydemo;
 //array->数据组+
-
+//静态初始化：手动指定数组元素
 public class ArrayDemo1 {
     public static void main(String[] args) {
         //int array1[]=new int{1,2,3,4,5};不知道为什么这个会报错
