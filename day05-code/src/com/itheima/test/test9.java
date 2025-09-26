@@ -11,7 +11,7 @@ public class test9 {
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             int a = random.nextInt(100) + 1;
-            System.out.println(a);
+            System.out.print(a+" ");
             arr[i] = a;
             sum = sum + arr[i];
         }
