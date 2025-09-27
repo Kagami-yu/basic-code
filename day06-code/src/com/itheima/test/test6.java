@@ -7,7 +7,10 @@ package com.itheima.test;
 public class test6 {
     public static void main(String[] args) {
         int arr[]={2,4,6,8,7,5,46,10};
-        copyOfRange(arr,3,7);
+        int[]copyarr=copyOfRange(arr,3,7);
+        for(int i=0;i<copyarr.length;i++){
+            System.out.print(copyarr[i]+" ");
+        }
     }
     public static int[] copyOfRange(int arr[],int from,int to){
         int[] arr1=new int[to-from];
@@ -15,7 +18,6 @@ public class test6 {
             arr1[j]=arr[i];
         }
         for(int k=0;k<arr1.length;k++) {
-            System.out.print(arr1[k]+",");
         }
         return arr1;//返回数组得int[]
     }
