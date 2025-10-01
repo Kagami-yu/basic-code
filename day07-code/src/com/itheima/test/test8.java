@@ -9,19 +9,16 @@ public class test8 {
 
         //生成中奖号码
         int[] arr = getNum();
-        /*
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + ",");
+            System.out.print(arr[i] + " ");
         }
-         */
         System.out.println();
+        System.out.println("======================");
         //用户得到的号码
         int[] arr1 = userInputNum();
-        /*
         for (int i = 0; i < arr1.length; i++) {
-            System.out.print(arr1[i] + ",");
+            System.out.print(arr1[i] + " ");
         }
-         */
         //检验中奖
         int blueCount = 0;
         int redCount = 0;
@@ -31,6 +28,8 @@ public class test8 {
             for (int j = 0; j < arr.length - 1; j++) {
                 if (arr[j] == redNumber) {
                     redCount++;
+                    //跳出内循环
+                    break;
                 }
             }
         }
@@ -44,11 +43,11 @@ public class test8 {
             System.out.println("五等奖10元");
         } else if (count == 5) {
             System.out.println("四等奖200元");
-        } else if (count == 6) {
+        } else if (redCount == 5 && blueCount == 1) {
             System.out.println("三等奖1000元");
-        } else if (count == 7) {
+        } else if (redCount == 6 && blueCount == 0) {
             System.out.println("二等奖--最高500万");
-        } else if (count == 8) {
+        } else if (count == 7) {
             System.out.println("一等奖--最高1000万");
         } else {
             System.out.println("没有中奖");
