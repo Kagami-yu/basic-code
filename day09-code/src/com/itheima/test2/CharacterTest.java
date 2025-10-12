@@ -1,5 +1,5 @@
 package com.itheima.test2;
-
+//回合制格斗
 public class CharacterTest {
     public static void main(String[] args) {
         //调用有参方法
