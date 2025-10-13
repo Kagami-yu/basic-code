@@ -33,6 +33,9 @@ public class StudentTest {
                 arr[count] = stu4;
             }
         }
+        //遍历数组也分两种--newarr或原先的arr
+
+
     }
 
     //创建新数组的方法
@@ -57,7 +60,6 @@ public class StudentTest {
         }
         return count;
     }
-
 
     //唯一性判断的方法----先判断再添加
     //已存在--不用添加
