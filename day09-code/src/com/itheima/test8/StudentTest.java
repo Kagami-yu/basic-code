@@ -53,12 +53,12 @@ public class StudentTest {
         //数据要非null才能被使用
         for (int i = 0; i < arr.length; i++) {
 
-                if(arr[i]!=null&&arr[i].getId() == id ) {
-                    //true表示已有重复数据
-                    System.out.println("重复id，重新输入");
-                    return true;
-                }
+            if (arr[i] != null && arr[i].getId() == id) {
+                //true表示已有重复数据
+                System.out.println("重复id，重新输入");
+                return true;
             }
+        }
 
         //false没有重复数据
         return false;
