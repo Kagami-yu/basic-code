@@ -17,6 +17,7 @@ public class StringDemo6_2 {
 
     public static String reverse(String str){
         String res="";
+        //i表示索引，不过是倒着的
         for (int i = str.length()-1; i >= 0; i--) {
             char ch=str.charAt(i);
             res+=ch;
