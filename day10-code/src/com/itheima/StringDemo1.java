@@ -1,3 +1,5 @@
+package com.itheima;
+
 public class StringDemo1 {
     public static void main(String[] args) {
         //1.使用直接赋值方法获取一个字符串对象

@@ -1,6 +1,8 @@
+package com.itheima;
+
 import java.util.Scanner;
 
-public class StringDmo3 {
+public class StringDemo3 {
     //public char charAt(int index):根据索引返回字符
     //public int length():返回此字符串的长度
     //数组长度:数组名.length--属性
