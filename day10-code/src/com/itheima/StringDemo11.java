@@ -22,6 +22,8 @@ public class StringDemo11 {
  */
         sb.reverse();//反转--一般字符串不可以反转，但是StringBuilder不同
         System.out.println(sb);
+        System.out.println(sb.capacity());
+        System.out.println(sb.length());
 
         //获取长度
         System.out.println(sb.length());

@@ -11,5 +11,8 @@ public class StringDemo14 {
         StringJoiner sj=new StringJoiner(",","[","]");
         sj.add("1").add("2").add("3");//只能添加字符串
         System.out.println(sj.toString());
+        StringJoiner sj2=new StringJoiner("");
+        sj2.add("1").add("2").add("3");
+        System.out.println(sj2);//123
     }
 }
