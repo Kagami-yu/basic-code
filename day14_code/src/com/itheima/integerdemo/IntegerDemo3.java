@@ -7,10 +7,10 @@ public class IntegerDemo3 {
         //自动装箱：把包装类自动变成基本数据类型
         //自动装箱
         Integer i1=10;//在底层会自动调用valueOf静态方法再得到一个Integer对象，不过这个动作不需要我们自己动手
-        Integer i2=new Integer(10);
+        Integer i2=new Integer("18");
         //自动拆箱
         int i=6;
-        System.out.println(i+i1);
+        System.out.println(i+i2);
 
         //再jdk5以后int和Integer可以看做是同一个东西，在内部会自动优化
     }
