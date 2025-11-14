@@ -34,5 +34,9 @@ public class test5 {
         LocalDate date2 = LocalDate.of(2001,1,1);
         LocalDate day4 = date2.minusDays(1);
         System.out.println(day4.getDayOfYear());//366
+
+        //jdk8的判断闰年的方法,是返回true，否返回false
+        boolean f=date1.isLeapYear();
+        System.out.println(f);
     }
 }
