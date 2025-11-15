@@ -1,6 +1,6 @@
 package com.itheima.mysort;
 
-public class BubbleDemo1 {
+public class a01_BubbleDemo1 {
     public static void main(String[] args) {
         //冒泡排序
         int[] arr = {5, 4, 3, 6, 8};
