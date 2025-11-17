@@ -12,6 +12,7 @@ public class a05_QuickSortDemo {
     }
 
     public static void quickSort(int[] arr, int i, int j) {
+        //end一定要在strat前面
         if (i >= j) {return;}//递归出口
         int start = i;
         int end = j;
