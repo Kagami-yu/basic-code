@@ -21,5 +21,5 @@ public class MyArrayList<E>{
     @Override
     public String toString() {
         return Arrays.toString(obj);
-    }
+    }//没有这段就只打印出地址值
 }
