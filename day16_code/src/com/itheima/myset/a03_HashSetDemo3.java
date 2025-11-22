@@ -3,7 +3,7 @@ package com.itheima.myset;
 import java.util.HashSet;
 import java.util.Objects;
 
-public class a03_HashCodeDemo3 {
+public class a03_HashSetDemo3 {
     public static void main(String[] args) {
         Student1 s1 = new Student1("lisi",18);
         Student1 s2 = new Student1("wangwu",19);
@@ -14,6 +14,7 @@ public class a03_HashCodeDemo3 {
         System.out.println(set.add(s2));
         System.out.println(set.add(s3));
         System.out.println(set.add(s4));
+        //无序
         set.forEach(student-> System.out.println(student));
     }
 }
