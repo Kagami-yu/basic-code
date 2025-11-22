@@ -18,7 +18,7 @@ public class a03_HashSetDemo3 {
         set.forEach(student-> System.out.println(student));
     }
 }
-class Student1{
+class Student1 implements Comparable<Student1>{
     private String name;
     private int age;
 
@@ -67,14 +67,22 @@ class Student1{
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Student1 student1 = (Student1) o;
-        return age == student1.age && Objects.equals(name, student1.name);
-    }
+    public int compareTo(Student1 o) {
+        //指定排序规则
+        //先年龄后姓名
+        int res=this.getAge()-o.getAge();
+        return res;
+    }//o：已经再红黑树存在的元素；this：当前要添加的元素
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, age);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Student1 student1 = (Student1) o;
+//        return age == student1.age && Objects.equals(name, student1.name);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(name, age);
+//    }
 }
