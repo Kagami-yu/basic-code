@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 public class a02_MapDemo2 {
@@ -25,7 +26,19 @@ public class a02_MapDemo2 {
             Map.Entry<String, String> entry = it.next();
             System.out.println(entry.getKey()+":"+entry.getValue());
         }
-        //lambda
+        //Consumer->单列集合
+        //BiConsumer->双列集合
+
+        //lambda-1-不能用BiConsumer
         entries.forEach( entry-> System.out.println(entry.getKey()+":"+entry.getValue()));
+        //lambda-2
+        map.forEach(new BiConsumer<String, String>() {
+            @Override
+            public void accept(String key, String value) {
+                System.out.println(key+":"+value);
+            }
+        });
+        //简化为
+        map.forEach((key,value)-> System.out.println(key+":"+value));
     }
 }
