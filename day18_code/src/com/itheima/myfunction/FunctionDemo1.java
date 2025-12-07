@@ -1,9 +1,8 @@
 package com.itheima.myfunction;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
-public class Function1 {
+public class FunctionDemo1 {
     public static void main(String[] args) {
         Integer[] arr={6,3,2,4,5,1};
 //        Arrays.sort(arr,new Comparator<Integer>() {
@@ -14,7 +13,7 @@ public class Function1 {
 //        });
 //        System.out.println(Arrays.toString(arr));
         //方法引用
-        Arrays.sort(arr,Function1::subtraction);
+        Arrays.sort(arr, FunctionDemo1::subtraction);
         System.out.println(Arrays.toString(arr));
     }
 
