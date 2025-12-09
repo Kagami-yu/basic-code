@@ -9,7 +9,7 @@ public class FileDemo2 {
             public boolean createNewFile()     创建一个新的空的文件夹
             public boolean mkdir()             创建单级文件夹
             public boolean mkdirs()            创建多级文件夹
-            public boolean exists()            删除文件，空文件夹
+            public boolean delete()            删除文件，空文件夹
 
             1.createNewFile创建一个新的空的文件夹
             细节1：
@@ -34,5 +34,7 @@ public class FileDemo2 {
 
         File file3=new File("D:\\javaFileTest\\EEE\\FFF");
         System.out.println(file3.mkdirs());
+
+        System.out.println(file1.delete());
     }
 }
