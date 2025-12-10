@@ -16,10 +16,10 @@ public class ExceptionTest4 {
                 gf.setName(name);
                 gf.setAge(age);
                 break;
-            } catch (NumberFormatException e) {
-                System.out.println("年龄格式有误");
-            }catch(RuntimeException e){
-                System.out.println("年龄或者姓名不符合规范");
+            } catch (NameFormatException e) {
+                e.printStackTrace();
+            } catch (AgeOutOfBoundsException e) {
+                e.printStackTrace();
             }
         }
     }
@@ -39,7 +39,7 @@ class GirlFriend{
 
     public void setAge(int age) {
         if (age < 18 || age >30 ) {
-            throw new RuntimeException();
+            throw new AgeOutOfBoundsException(age+"年龄不规范");
         }
         this.age = age;
     }
@@ -49,9 +49,27 @@ class GirlFriend{
     }
 
     public void setName(String name) {
-        if (name == null || name.length() == 3) {
-            throw new RuntimeException();
+        if (name.length() < 3 ||name.length() > 10) {
+            throw new NameFormatException(name+"长度不规范");
         }
         this.name = name;
+    }
+}
+
+class NameFormatException extends RuntimeException {
+    public NameFormatException() {
+    }
+
+    public NameFormatException(String message) {
+        super(message);
+    }
+}
+
+class AgeOutOfBoundsException extends RuntimeException {
+    public AgeOutOfBoundsException() {
+    }
+
+    public AgeOutOfBoundsException(String message) {
+        super(message);
     }
 }
